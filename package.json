@@ -1,7 +1,7 @@
 {
   "name": "style-text",
   "description": "根据文案中的特殊标记，如{{text}},[[text]] 做不同的样式解析，如高亮，加粗等。目前只适配h5端。",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "ZHL",
   "license": "MIT",
   "main": "dist/vue-style-text",
@@ -12,9 +12,13 @@
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+ },
+
   "repository": {
     "type": "git",
-    "url": "git+https://git.xiaojukeji.com/zhanghelin_i/style-text.git"
+    "url": "https://github.com/Leochens/vue-style-text"
   },
   "dependencies": {
     "vue": "^2.5.11"
